@@ -1,0 +1,8 @@
+ubuntu@ip-172-31-32-203:~/script$ cat loop-ex.sh
+#!/bin/bash
+
+dir=/home/ubuntu/script/*.sh
+for files in $dir
+do 
+        echo $files
+done

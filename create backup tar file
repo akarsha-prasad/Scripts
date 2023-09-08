@@ -1,1 +1,11 @@
 tar -cvf mybackup.tar.gz <pathoffolderforbackup>
+
+to copy the backed-up from from ubuntu to local-
+
+scp command is used to copy the backed-up file to local
+copy the ssh command from ec2
+Go to local terminal->
+scp -i "key2.pem" ubuntu@ec2-52-90-168-201.compute-1.amazonaws.com:/home/ubuntu/script/mybackup.tar.gz .
+
+Extract to current directory:
+tar -xvf mybackup.tar.gz

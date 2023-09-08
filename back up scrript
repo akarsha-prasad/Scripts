@@ -1,0 +1,26 @@
+#!/bin/bash
+
+src=/home/ubuntu/script
+tgt=/home/ubuntu/backups
+
+echo "backup started"
+
+tar -cvf $tgt/my-backup.tar.gz $src
+
+echo "backup completed"
+
+
+
+
+
+#######Backup for particular day####################################
+#!/bin/bash
+
+src=/home/ubuntu/script
+tgt=/home/ubuntu/backups
+filename=$(date +'%d/%M/%Y').tar.gz
+echo "backup started for $filename"
+
+tar -cvf $tgt/my-backup.tar.gz $src
+
+echo "backup completed"

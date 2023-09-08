@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#install update
+sudo apt-get update -y
+
+#install nginx
+
+sudo apt-get install nginx
+
+#start and enable nginx
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+echo "<h1> Hello </h1>" /var/www/html/index.html

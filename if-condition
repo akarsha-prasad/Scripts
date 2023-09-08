@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "This is $1"
+ubuntu@ip-172-31-32-203:~/script$ cat if-con.sh
+#!/bin/bash
+
+name=Akarsha
+val=1
+if [ $val -eq 1 ]
+then 
+        echo "Akarsha logged in"
+else
+        echo "Something is wrong"
+fi
